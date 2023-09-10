@@ -23,8 +23,6 @@ function updateFormFields() {
     function clearLocalStorage() {
     localStorage.removeItem("feedback-form-state");
     registerForm.reset();
-        // emailInput.value = "";
-        // messageInput.value = "";
     }
 
     registerForm.addEventListener('input', saveInput);
