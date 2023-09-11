@@ -28,11 +28,11 @@ function updateFormFields() {
     registerForm.addEventListener('input', saveInput);
     registerForm.addEventListener("submit", function (event) {
         event.preventDefault();
-        clearLocalStorage();
         console.log({
             email: emailInput.value,
             message: messageInput.value
           });
+          clearLocalStorage();
       });
           
       updateFormFields();
